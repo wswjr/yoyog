@@ -1,0 +1,77 @@
+<view class="main">
+  <view class="orders-no-address">促销活动</view>
+</view>
+<view class="tab-header"> 
+  <view class="{{tabArr.curHdIndex=='0'? 'active' : ''}}" id="0"  data-id="0" bindtap="tab">秒杀活动</view> 
+  <view class="{{tabArr.curHdIndex=='1'? 'active' : ''}}" id="1"  data-id="1" bindtap="tab">团购</view> 
+  <view class="{{tabArr.curHdIndex=='2'? 'active' : ''}}" id="2"  data-id="2" bindtap="tab">拼团</view> 
+</view> 
+ 
+<view class="tab-content"> 
+  <view class="right-item {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+    <view class='goods'>
+      <view class='goods-con' wx:for="{{seckilling}}" wx:key="index" wx:for-item="item">
+         <view class='goods-image'>
+           <image class='images-wh' src='{{item.images}}'></image>
+         </view>
+         <view class='goodds-name'>
+           <text>{{item.name}}</text>
+           <text class='font-box1'>{{item.gg}}</text>
+         </view>
+         <view class='goodds-price'>
+           <text>￥{{item.price}}</text>
+           <text class='font-box2'>抢购></text>
+         </view>
+         <view class='goodds-progress1'>
+           <text>已售{{item.progress}}%</text>
+           <progress percent="{{item.progress}}"  active/>
+         </view>
+      </view>
+    </view>
+  </view> 
+  <view class="right-item {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+    <view class='goods'>
+        <view class='goods-con' wx:for="{{seckilling}}" wx:key="index" wx:for-item="item">
+          <view class='goods-image'>
+            <image class='images-wh' src='{{item.images}}'></image>
+          </view>
+          <view class='goodds-name'>
+            <text>{{item.name}}</text>
+            <text class='font-box3'>{{item.gg}}</text>
+          </view>
+          <view class='goodds-price'>
+            <text>￥{{item.price}}</text>
+            <text class='font-box2'>加入购物车</text>
+          </view>
+          <view class='goodds-progress2'>
+            <text>距结束还剩{{item.progress}}天</text>
+          </view>
+        </view>
+    </view>
+  </view> 
+  <view class="right-item {{tabArr.curBdIndex=='2'? 'active' : ''}}">
+    <view class='goods'>
+        
+        <view class='goods-con' wx:for="{{seckilling}}" wx:key="index" wx:for-item="item">
+            <view class='goods-image1'>
+               <image class='images-wh' src='../../images/hd/rt.png'></image>
+               <text>拼团价</text>
+            </view>
+            <view class='goods-image mar-l1'>
+              <image class='images-wh' src='{{item.images}}'></image>
+            </view>
+            <view class='goodds-name'>
+              <text>{{item.name}}</text>
+              <text class='font-box3'>{{item.gg}}</text>
+            </view>
+            <view class='goodds-price goods-qclb'>
+              <text>￥{{item.price}}</text>
+              <text class='font-box4'>￥{{item.price}}</text>
+            </view>
+            <view class='goodds-progress2'>
+              <text class='font-color1'>立即拼团</text>
+            </view>
+        </view>
+    </view>
+  </view> 
+</view>

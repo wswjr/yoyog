@@ -1,0 +1,14 @@
+<view class="main">
+        <view  class="orders-address">收藏商品</view>
+    <view class="article-con1" wx:for="{{collect}}" wx:key="index" wx:for-item="item">
+        <view class='article-con-right'>
+           <image class='article-img1' src='{{item.img}}'></image>
+        </view>
+        <view class='article-con-left'>
+          <text class='article-text1'>{{item.name}}</text>
+           <text class='article-text3'>{{item.count}}收藏</text>
+           <text class='article-text4'>￥{{item.price}}</text>
+        </view>
+        
+     </view>
+</view>

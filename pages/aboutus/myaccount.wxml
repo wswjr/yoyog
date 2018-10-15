@@ -1,0 +1,24 @@
+<view class="main">
+    <navigator url="../aboutus/aboutus">
+        <view  class="orders-address">我的账户</view>
+    </navigator>
+
+    <view class="form-box">
+            <view class='view-pass'>
+              <text class="pass-text1">会员名</text>   
+              <text class="pass-text2">biubiubiu</text>
+            </view>         
+            <view class='view-pass'>
+              <text class="pass-text1">身份证号</text>   
+              <text class="pass-text2">110293**********</text>
+            </view> 
+             <view class='view-pass'>
+              <text class="pass-text1">手机号码</text>   
+              <text class="pass-text2">15232046423</text>
+            </view> 
+             <view class='view-pass'>
+              <text class="pass-text1">性别</text>   
+              <text class="pass-text2">女</text>
+            </view> 
+    </view>
+</view>

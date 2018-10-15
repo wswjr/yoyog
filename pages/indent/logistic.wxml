@@ -1,0 +1,47 @@
+<view class="main">
+  <view class="orders-no-address">物流消息</view>
+  <view class='logistic'>
+    <view class='logistic-header'>
+      <view class='logistic-h1'>
+        <image class='images-wh' src='../../images/hd/s6.png'></image>
+      </view>  
+      <view class='logistic-h2'>
+        已揽件
+        <text>预计后天送达</text>
+      </view>
+      <view class='logistic-h3'>
+        <image class='images-wh' src='../../images/classify/kf.png'></image>
+      </view>
+    </view>
+    <map id="map" latitude="39.94048" longitude="116.10146" scale="14"  show-location style="width: 100%;height:40vh;"></map>
+    <view class='logistic-header  logistic-title'>
+      <image src='../../images/hd/sf.png'></image>
+      <view class='logistic-t1'>
+         顺丰快递
+        <text>运单号 132456743765</text>
+        <text>官方电话 95546</text>
+      </view>
+    </view>
+    <view class="listview-container">
+        <block  wx:for="{{axis}}" wx:key="index" wx:for-item="item">
+          <view class="playlog-item" bindtap="itemTapped">
+            <view class="dotline">
+              <!-- 竖线 -->
+              <view class="line"></view>
+              <!-- 圆点 -->
+              <view class="dot"></view>
+              <!-- 时间戳 -->
+            </view>
+            <view class="content">
+              <text class="course">{{item.time}}     {{item.content}}</text>
+            </view>
+          </view>
+          <!-- <ad unit-id="adunit-5abb45645905fc90" wx:if="{{index % 5 == 4}}">
+          cvhdsihvs
+          </ad> -->
+        </block></view>
+  </view>
+
+
+
+</view>

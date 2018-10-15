@@ -1,0 +1,89 @@
+/* pages/login/login.wxss */
+
+.main {
+  width: 100%;
+  /* height: 1140rpx; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 100%;
+  position: relative;
+  left: 40rpx;
+}
+
+.loginbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.main-login {
+  width: 88%;
+  height: 540rpx;
+  /* background-color: #eff1ef9e; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border-radius: 10rpx;
+  position: fixed;
+  top:29%;
+}
+
+.logo {
+  width: 200rpx;
+  height: 100rpx;
+}
+
+.view-pass {
+  width: 88%;
+  background-color: #fff;
+  display: flex;
+  font-size: 28rpx;
+  margin-bottom: 25rpx;
+  flex-direction: colum;
+  align-items: center;
+  border-radius: 10rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+
+.pass-text1 {
+  width: 50rpx;
+  padding: 0 30rpx;
+  height: 40rpx;
+}
+
+.view-pass input {
+  height: 100%;
+  border-bottom: 1rpx solid #ededed;
+  color: #999;
+  width: 100%;
+  padding-bottom: 5rpx;
+}
+
+.view-pass input-placeholder {
+  color: #aaa;
+}
+
+.pass-input {
+  background-color: #0aa570;
+  color: #fff;
+  border-radius: 10rpx;
+  width: 88%;
+  font-size: 30rpx;
+  margin: 10rpx 0 50rpx 0;
+}
+
+.pass-text2 {
+  font-size: 25rpx;
+  color: #0aa570;
+  font-weight: 600;
+  margin-bottom: 40rpx;
+}

@@ -1,0 +1,67 @@
+<view class='wx_dialog_container' hidden="{{!isShow}}" catchtouchmove="preventTouchMove">
+  <view class='wx-mask' catchtap='hideShare'></view>
+  <view class='wx-dialog' style="{{style_title}}">
+    <view class='wx-dialog-header orders-address'>
+       <text class='wx-dialog-text1'>筛选</text>
+       <text class='wx-dialog-text2'>确认</text>
+    </view>
+    <view class='wx-dialog-title'>
+       <view class='wx-dialog-fl'>
+         <view class='wx-dialog-he'>
+           分类
+         </view>
+          <view class='wx-dialog-co'>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+         </view>
+       </view>
+       <view class='wx-dialog-fl'>
+         <view class='wx-dialog-he'>
+           品牌
+         </view>
+          <view class='wx-dialog-co'>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+         </view>
+       </view>
+       <view class='wx-dialog-fl'>
+         <view class='wx-dialog-he'>
+           生产地
+         </view>
+          <view class='wx-dialog-co'>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+             <text>美容养颜</text>
+         </view>
+        </view>
+         <view class='wx-dialog-fl'>
+         <view class='wx-dialog-he'>
+           价格区间
+         </view>
+          <view class='wx-dialog-co wx-cen'>
+             <input class="border-input" name="input"  placeholder="最低价"/>——
+             <input class="border-input" name="input"  placeholder="最高价"/> 
+         </view>
+        </view>
+    </view>
+    <view class='wx-dialog-footer'>
+    
+    </view>
+  </view>
+</view>

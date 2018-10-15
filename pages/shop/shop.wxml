@@ -1,0 +1,21 @@
+<!--pages/shop/shop.wxml-->
+<view class='main'>
+  <view class='shop-fl'>
+      <view>热门商品</view>
+      <view>新品推荐</view>
+      <view data-index="{{daindex1}}" data-th="1" bindtap="choosesort1">兑换次数<image src="{{imageurl1}}"></image></view>
+      <view data-index="{{daindex2}}" data-th="2" bindtap="choosesort1">积分<image src="{{imageurl2}}"></image></view>
+  </view>
+  <view class="goods">
+    <view class='goods-con' wx:for="{{seckill}}" wx:key="index" wx:for-item="item">
+      <navigator class='order-button navigator-hover' url="/pages/shop/details">
+        <image class='goods-img1' src="{{item.seckill_img}}"></image>
+      </navigator>
+        <view class='goods-footer'>
+          <text class='goods-text1'>{{item.seckill_name}}</text>
+          <text class='goods-text2'>{{item.seckill_price}}积分</text>
+        </view>
+    </view>
+  </view>
+</view>
+

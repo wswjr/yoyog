@@ -1,0 +1,55 @@
+/* pages/changepassword/changepassword.wxss */
+page{
+  background-color:#efeff4;
+}
+
+.form-box{
+    margin-top: 30rpx;
+}
+
+.view-pass{
+  width:100%;
+  background-color:#fff;
+  display:flex;
+  font-size:28rpx;
+  flex-direction:colum;
+  align-items:center;
+  justify-content: space-between;
+  height:110rpx;
+  border-bottom:1rpx solid #f0efee;
+}
+.pass-text1{
+  width:28%;
+  padding-left:25rpx;
+}
+.pass-input{
+  background-color: #0aa570;
+  color: #fff;
+  border-radius: 30rpx;
+}
+.pass-text2{
+   padding-right:25rpx;
+}
+.orders-address{
+    position: relative;
+    padding: 20rpx 50rpx 20rpx 35rpx;
+    font-size: 36rpx;
+    line-height: 70rpx;
+    border-bottom: 2rpx solid #ededed;
+    color: #4d4c4c;
+    background-color: #fff;
+    text-align: center;
+    font-weight: 500;
+}
+.orders-address:after{
+    position: absolute;
+    left: 30rpx;
+    top: 40rpx;
+    content: '';
+    width: 12px;
+    height: 12px;
+    border-top: 4rpx solid #7f7f7f;
+    border-left: 4rpx solid #7f7f7f;
+    -webkit-transform: rotate(320deg);
+    transform: rotate(320deg);
+}

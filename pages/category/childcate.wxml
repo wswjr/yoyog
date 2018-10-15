@@ -1,0 +1,39 @@
+ <!-- <share id='share' image="{{msg.src}}" shopid="{{msg.id}}" text="{{msg.title}}" content='{{msg.title}}'>
+  </share> -->
+ <share id='share'>
+  </share>
+<view class='orders-address'>
+           <view class='page_row' bindtap="suo">
+              <view class="search">
+                <view class="df search_arr">
+                  <icon class="searchcion" size='20' type='search'></icon>
+                  <input type='text'  placeholder="请输入商品名称" value="{{searchValue}}"/>
+                </view>
+              </view>
+              <view class='sousuo' catchtap='showShare'>筛选</view>
+            </view>
+</view>
+<view class='shop-fl'>
+    <view>综合</view>
+    <view>销售</view>
+    <view>新品</view>
+</view>
+<view class='goods'>
+   <view class='goods-con' wx:for="{{scategory}}" wx:key="index" wx:for-item="item">
+    <navigator url="/pages/product/product?id={{item.id}}" class="order-button">
+      <image class='goods-img1'  src="{{item.scategory_img}}"></image>
+    </navigator>
+      <view class='goods-footer'>
+        <text class='goods-text1'>{{item.scategory_name}}</text>
+        <text class='goods-text2'>{{item.scategory_price}}</text>
+        <view class='footer-sc'>
+          {{item.scategory_sc}}
+          <image wx:if="{{item.selected}}" bindtap="selectList" data-index="{{index}}" src='../../images/classify/sc2.png'></image>
+          <image wx:else bindtap="selectList" data-index="{{index}}" src='../../images/classify/sc1.png'></image>    
+        </view>
+      </view>
+   </view>
+   
+</view>
+
+

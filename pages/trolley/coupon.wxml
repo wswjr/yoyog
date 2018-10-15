@@ -1,0 +1,59 @@
+<view class="main">
+    <navigator url="../aboutus/aboutus">
+        <view  class="orders-address">领券中心</view>
+    </navigator>
+   <view class="coupon-list">
+      <view class="item stamp stamp01 ">
+       <!-- 左侧 -->
+        <view class="float-li t1">
+            <view class="coupon-left">
+                <view class="t t1">10元优惠券</view>
+                <view class="t t2">全场满1000元可立即使用</view>
+            </view>
+        </view>
+        <!-- 右侧 -->
+        <view class="float-li-rig">
+            <view class="coupon-rig">
+               <view class="t1 t">限时优惠全店通用</view>
+               <view class="t2 t"><text>立即领取</text></view>
+            </view>
+        </view>
+        <i></i>
+    </view>
+    <view class="item stamp stamp02 ">
+        <!-- 左侧 -->
+        <view class="float-li t1">
+            <view class="coupon-left">
+                <view class="t t1">50元优惠券</view>
+                <view class="t t2">全场满2000元可立即使用</view>
+            </view>
+        </view>
+        <!-- 右侧 -->
+        <view class="float-li-rig">
+            <view class="coupon-rig">
+               <view class="t1 t">限时优惠全店通用</view>
+               <view class="t2 t"><text>立即领取</text></view>
+            </view>
+        </view>
+        <i></i>
+    </view>
+    <view class="item stamp stamp03 ">
+        <!-- 左侧 -->
+        <view class="float-li t1">
+            <view class="coupon-left">
+                <view class="t t1">100元优惠券</view>
+                <view class="t t2">全场满3000元可立即使用</view>
+            </view>
+        </view>
+        <!-- 右侧 -->
+        <view class="float-li-rig">
+            <view class="coupon-rig">
+               <view class="t1 t">限时优惠全店通用</view>
+               <view class="t2 t"><text>立即领取</text></view>
+            </view>
+        </view>
+        <i></i>
+    </view>
+   </view>
+   
+</view>

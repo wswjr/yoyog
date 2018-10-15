@@ -1,0 +1,116 @@
+<!--index.wxml-->
+<view class='index'>
+          <!-- <image class="index-banner" src="/images/banner/banner.png"></image>   -->
+          <image class="index-banner" src="http://gongrongshe.jarmr.cn/public/static/upload/jk/banner.png"></image>            
+  <view class='index-classify'>
+      <view class='index-col5' wx:for="{{classify}}" wx:key="index" wx:for-item="item">
+        <navigator class='jk' url="{{item.src}}">
+         <image class="index-classify5" src="{{item.classify_img}}"></image> 
+         <text>{{item.classify_name}}</text>
+        </navigator>
+      </view>
+  </view>
+  <view class='index-seckill'>
+    <view class='index-bb'>
+     <view class='seckill-activity'>
+        <text class='seckill-text1'>秒杀活动</text>
+        <text class='seckill-text2'>活动时间倒计时结束: 12 : 10 : 35</text>
+        <navigator url='/pages/promotional/promotional'>
+           <text class='seckill-text3'>更多></text>
+        </navigator>
+     </view>
+    </view>
+    <view class='index-ba'>
+          <scroll-view  scroll-x style="width: 100%">
+            <view class="scroll-view_H">
+                <view  class="scroll-view-item_H" wx:for="{{seckill}}" wx:key="index" wx:for-item="itemr">
+                   <image class="seckill-img1" src="{{itemr.seckill_img}}"></image>
+                   <text class='seckill-text4'>{{itemr.seckill_name}}</text>
+                   <text class='seckill-text5'>￥{{itemr.seckill_price}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+  </view>
+  <view class='promotions-con1'>
+    <image class='promotions-img1' src='/images/hd/promotions.png'></image>
+  </view>
+  <view class='promotions-con2'>
+      <view class='promotions-v1'>
+          <view class='promotions-v1-item'> 
+            <text class='promotions-text2'>长粒香米</text>
+            <text class='promotions-text3'>最低30元起</text>
+            <image class='promotions-img2' src="/images/hd/pro.png"></image>
+          </view>
+          <view class='promotions-v1-item'> 
+            <text class='promotions-text2'>长粒香米</text>
+            <text class='promotions-text3'>活动特价9.9元起</text>
+            <image class='promotions-img2' src="/images/hd/pro.png"></image>
+          </view>
+      </view>
+      <view class='promotions-v1'>
+          <view class='promotions-v2-item'>  
+            <text class='promotions-text2'>新疆脆枣</text>
+            <text class='promotions-text3'>9.9元起</text>
+            <image class='promotions-img2' src="/images/hd/pro1.png"></image>
+          </view>
+          <view class='promotions-v2-item'>  
+            <text class='promotions-text2'>黑枣</text>
+            <text class='promotions-text3'>9.9元起</text>
+            <image class='promotions-img2' src="/images/hd/pro1.png"></image>  
+          </view>
+          <view class='promotions-v2-item'> 
+            <text class='promotions-text2'>虫草花</text>
+            <text class='promotions-text3'>9.9元起</text>
+            <image class='promotions-img2' src="/images/hd/pro1.png"></image>   
+          </view>
+          <view class='promotions-v2-item'>   
+            <text class='promotions-text2'>黑枣</text>
+            <text class='promotions-text3'>9.9元起</text>
+            <image class='promotions-img2' src="/images/hd/pro1.png"></image> 
+          </view>
+      </view>
+  </view>
+    <view class='promotions-con2 index-mar1'>
+      <view class='promotions-v2'>
+          <view class='promotions-v3-item'> 
+            <text class='promotions-text2 index-t1'>20积分兑换</text>
+            <text class='promotions-text3'>随心所欲</text>
+            <image class='promotions-img2' src="/images/hd/pro2.png"></image>
+          </view>
+           <view class='promotions-v3-item'> 
+            <text class='promotions-text2 index-t1'>20积分兑换</text>
+            <text class='promotions-text3'>最低699</text>
+            <image class='promotions-img2' src="/images/hd/pro2.png"></image>
+          </view>
+           <view class='promotions-v3-item'> 
+            <text class='promotions-text2 index-t1'>20积分兑换</text>
+            <text class='promotions-text3'>有家的感觉</text>
+            <image class='promotions-img2' src="/images/hd/pro3.png"></image>
+          </view>
+           <view class='promotions-v3-item'> 
+            <text class='promotions-text2 index-t1'>20积分兑换</text>
+            <text class='promotions-text3'>服务更贴心</text>
+            <image class='promotions-img2' src="/images/hd/pro3.png"></image>
+          </view>
+      </view>
+  </view>
+  <view class='index-article'>
+     <view class="article-con1" wx:for="{{lb}}" wx:key="index" wx:for-item="item">
+        <view class='article-con-left'>
+          <text class='article-text1'>{{item.name}}</text>
+          <view class='article-tag'>
+              <text wx:for="{{item.detail}}" wx:key="index" wx:for-item="val" class='article-text2'>{{val}}</text>      
+          </view>
+           <text class='article-text3'>{{item.content}}</text>
+           <text class='article-text4'>￥{{item.price}}/{{item.gg}}</text>
+        </view>
+        <view class='article-con-right'>
+           <image class='article-img1' src='{{item.img}}'></image>
+        </view>
+     </view>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>

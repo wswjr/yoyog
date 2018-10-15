@@ -1,0 +1,141 @@
+<!--pages/shop/details.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" data-src="{{item}}" bindtap="previewImage"></image>
+    </swiper-item>
+  </block>
+</swiper>
+<scroll-view style='background-color:#fff;' scroll-y="true">
+  <view class="detail">
+   <view class='detail-lf'>
+     <text class="title">虾青素鸡蛋</text>
+     <view class='price'>
+       <text class="price-text1">100积分</text>
+     </view>
+   </view>
+   <view class='detail-rt'>
+     <view class='detail-l'>
+        <image bindtap="addLike" src="{{isLike?'../../images/classify/sc1.png':'../../images/classify/sc2.png'}}" />
+        <text>收藏</text>
+     </view>
+     <view class='detail-l' bindtap="tosharing">
+        <image  src="../../images/classify/share.png" />
+        <text>分享</text>
+     </view>
+   </view>
+  </view>
+  <view class="separate">
+    <text>快递：免运费</text>
+    <text>月销：161笔</text>
+    <text>生产产地</text>
+  </view>
+  <view class="separate2">
+    <image src="../../images/classify/xz.png"></image> <text> 安全保障</text>
+    <image src="../../images/classify/xz.png"></image><text>极速发货</text>
+    <image src="../../images/classify/xz.png"></image><text>全国包邮</text>
+  </view>
+  <view class='zw'></view>
+
+  <view class='zw'></view>
+  <view class="body">
+      <view class="nav bc_white">
+        <view class="{{selected?'red':'default'}}" bindtap="selected">商品详情</view>
+        <view class="{{selected1?'red':'default'}}" bindtap="selected1">评价（126）</view>
+      </view>
+      <view class="{{selected?'show':'hidden'}}">
+          <block wx:for-items="{{detailImg}}" wx:key="name">
+            <image class="image_detail" src="{{item}}" />
+          </block>
+      </view>
+      <view class="{{selected1?'show':'hidden'}}">
+           <view class='shop-fl' style='border-top:1rpx #ededed solid'>
+                <view>全部（126）</view>
+                <view>好评（106）</view>
+                <view>中评（0）</view>
+                <view>差评（0）</view>
+            </view>
+          <view class='evaluate'>
+              <view class='evaluate-view'>
+                 <view class='evaluate-header'>
+                   <image class='userimg' src='../../images/hd/s5.png'></image>
+                    <view>
+                      <text class='usertext'>昵称昵称昵称</text>
+                      <image src='../../images/classify/xx.png'></image>
+                      <image src='../../images/classify/xx.png'></image>
+                      <image src='../../images/classify/xx.png'></image>
+                    </view>
+                    <text>2018-08-10</text>
+                 </view>
+                 <view class='evaluate-content'>
+                    很精致的一款产品，以前没有很认真的评价，浪费了好多积分，都是钱呀～这个不错，妥妥一百多字，第N次在淘宝上面买东西了，一般都是物美价廉质量好，可选性多，用的方便，买的开心，收快递的心情也能飞～
+                 </view>
+                  <view class='evaluate-footer'>
+                     <image src='../../images/hd/s5.png'></image>
+                     <image src='../../images/hd/s5.png'></image>
+                     <image src='../../images/hd/s5.png'></image>
+                 </view>
+              </view>
+              <view class='evaluate-view'>
+                 <view class='evaluate-header'>
+                   <image class='userimg' src='../../images/hd/s5.png'></image>
+                    <view>
+                      <text class='usertext'>昵称昵称昵称</text>
+                      <image src='../../images/classify/xx.png'></image>
+                      
+                    </view>
+                    <text>2018-08-10</text>
+                 </view>
+                 <view class='evaluate-content'>
+                    很精致的一款产品，以前没有很认真的评价，浪费了好多积分，都是钱呀～这个不错，
+                 </view>
+                  <view class='evaluate-footer'>
+                     
+                 </view>
+              </view>
+          </view>
+      </view>
+  </view>
+  <view class="temp"></view>
+</scroll-view>
+<!-- 底部悬浮栏 -->
+<view class="detail-nav">
+  <button class="button-red" bindtap="immeBuy" formType="submit">立即兑换</button>
+</view>
+  <!-- 分享 -->
+<view  hidden="{{modalHidden2}}"  bindconfirm="modalChange2">
+  <view class='wx-mask' catchtap='modalChange2'></view>
+  <view class='sharing'>
+     <view class='wx-sharing-content'>
+        <view>
+          <image src='../../images/classify/wx.png'></image>
+          <text>分享给朋友</text>
+        </view>
+        <view bindtap='toposter'>
+           <image src='../../images/classify/local.png'></image>
+           <text>生成商品海报</text>
+        </view>
+     </view>
+     <view class='wx-sharing-footer' bindtap='modalChange2'>
+        <text>关闭</text>
+    </view>
+  </view>
+</view>
+<!-- 保存图片 -->
+<view  hidden="{{poster}}"  bindconfirm="poster">
+  <view class='wx-mask' catchtap='poster'></view>
+  <view class='wx-poster'>
+     <view class='wx-poster-header' catchtap='poster'>
+        <image src='../../images/classify/colse.png'></image>
+     </view>
+     <view class='wx-poster-content'>
+        <view>
+            <canvas class="canvas" id="share" canvas-id='share'></canvas>
+        </view>
+     </view>
+     <view class='wx-poster-footer'>
+        <text class='wx-poster-text1'>保存图片</text>
+        <text class='wx-poster-text2'>保存至相册可以分享到朋友圈</text>
+    </view>
+  </view>
+</view>

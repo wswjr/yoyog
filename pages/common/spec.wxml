@@ -1,0 +1,45 @@
+<view class='wx_dialog_container' hidden="{{!isShow}}" catchtouchmove="preventTouchMove">
+  <view class='wx-mask' catchtap='hideShare'></view>
+  <view class='wx-dialog' style="{{style_title}}">
+    <view class='wx-dialog-header'>
+       <view class='wx-dialog-image'>
+         <image class='wx-img-wh' src='../../images/hd/s6.png'></image>
+       </view>
+       <view class='wx-dialog-price'>
+         ￥120
+         <text class='wx-font-gray'>库存2673件</text>
+       </view>
+       <view catchtap='hideShare'>
+         <image class='wx-img-sm' src='../../images/classify/gb.png'></image>
+       </view>
+    </view>
+    <view class='wx-dialog-title'>
+      <view class='wx-dialog-spec'>
+        <text>规格</text>
+        <text class='font-box'>30枚/箱</text>
+      </view>
+      <view class='wx-dialog-num'>
+        <text>数量</text>
+        <view class="cart-count-box">
+                    <text class="cart-count-down" bindtap="minusCount" data-obj="{{obj}}" data-index="{{index}}">-</text>
+                    <text class="cart-count-num">1</text>
+                    <text class="cart-count-add" bindtap="addCount" data-index="{{index}}">+</text>
+        </view>
+      </view>
+    </view>
+    <!-- 底部悬浮栏 -->
+    <view class="detail-nav">
+      <view class='detail-l'>
+        <image bindtap="toCar" src="../../images/icon/index1.png" />
+        <text>首页</text>
+      </view>
+      <view class="line_nav"></view>
+      <view class='detail-l'>
+        <image bindtap="addLike" src="{{isLike?'../../images/classify/sc1.png':'../../images/classify/sc2.png'}}" />
+        <text>收藏</text>
+      </view>
+      <button class="button-green" bindtap="toCar" formType="submit">加入购物车</button>
+      <button class="button-red" bindtap="immeBuy" formType="submit">立即购买</button>
+    </view>
+  </view>
+</view>

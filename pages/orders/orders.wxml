@@ -1,0 +1,50 @@
+<view class="main">
+  <view class="orders-no-address">确认订单</view>
+  <view class="cart-box">
+    <view class="cart-list" data-index="{{index}}" wx:for="{{orders}}" wx:key="{{index}}">
+      <view class='content'>
+        <navigator url="../details/details?id={{item.id}}">
+          <image class="cart-thumb" src="{{item.image}}"></image>
+        </navigator>
+        <view class='cart-count-box1'>
+          <text class="cart-pro-name">{{item.title}}</text>
+          <text class="cart-pro-xq">{{item.xq}}</text>
+          <text class="cart-pro-price">￥{{item.price}}</text>
+        </view>
+      </view>
+      <text class="cart-del">×{{item.num}}</text>
+    </view>
+  </view>
+  <view class='cart-reduced'>
+     <view class='cart-reduced-list'>
+       <view>运费：</view>
+       <view class='font-xs'>免邮费</view>
+     </view>
+     <view class='cart-reduced-list'>
+       <view>
+         优惠券/满减
+         <text class='font-bz font-sm font-red'>[满减和优惠券不能同时使用，每单只能使用一张优惠卷]</text>
+       </view>
+       <view class='font-red font-xs'>- ￥20.00</view>
+     </view>
+     <view class='cart-reduced-list'>
+       <view>
+         共3件商品 小计：
+       </view>
+       <view class='font-red font-xs'> ￥200.00</view>
+     </view>
+  </view>
+  <view class="cart-footer">
+    <view>
+      <view class="order-icon">
+        <navigator url="../orders/orders" class="order-button">
+          提交订单
+        </navigator>
+      </view>
+      <text class='cart-text2'>合计 ：</text>
+      <text class="cart-toatl-price">￥{{total}}</text>
+      <text class='cart-text3'>优惠10元</text>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,28 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="main">
+  <view class="orders-no-address">我的钱包</view>
+  <view class='wallet'>
+     <view class='wallet-title'>
+        <text>年化收益（%）</text>
+        <text class='wallet-text1'>8.0</text>
+     </view>
+     <view class='wallet-content'>
+        <view>
+            <text>总资产（元）</text>
+            <text class='wallet-text2'>2.45</text>
+        </view>
+        <view>
+            <text>体验金（元）</text>
+            <text class='wallet-text2'>0.00</text>
+        </view>
+        <view>
+            <text>累计收益（元）</text>
+            <text class='wallet-text2'>9.17</text>
+        </view>
+        <view>
+            <text>投资天数（天）</text>
+            <text class='wallet-text2'>14</text>
+        </view>
+     </view>
+  </view>
+</view>

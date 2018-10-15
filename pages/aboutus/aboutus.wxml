@@ -1,0 +1,129 @@
+<view class='main'>
+   <view class='main-header'>
+      <image class='header-bg' src='http://gongrongshe.jarmr.cn/public/static/upload/jk/banner1.png'></image>
+      <image class='header-ms' src='../../images/classify/ms.png'></image>
+      <view class='header-content'>
+         <image class='header-img1' src="{{thumb}}"></image>
+         <text class="header-tetx1">{{nickname}}</text>
+         <text class="header-tetx2">ID:13589019614</text>
+      </view>
+   </view>
+   <view class='main-con1'>
+     <view class='con1-in'>
+        <view>
+          <image src='../../images/classify/m1.png'></image>
+          <text>待付款</text>
+        </view>
+        <view>
+          <image src='../../images/classify/m2.png'></image>
+          <text>待收货</text>
+        </view>
+        <view>
+          <image src='../../images/classify/m3.png'></image>
+          <text>待评价</text>
+        </view>
+        <view>
+          <image src='../../images/classify/m4.png'></image>
+          <text>售后</text>
+        </view>
+        
+        <view class='coin'>
+          <navigator url="/pages/indent/indent" class='column'>
+            <image src='../../images/classify/m5.png'></image>
+            <text>我的订单</text>
+          </navigator>
+        </view>
+       
+     </view>
+     <view class='con1-in'>
+         <view>
+          <text class='con1-mt'>29</text>
+          <text>待付款</text>
+        </view>
+        <view>
+          <text class='con1-mt'>6</text>
+          <text>待收货</text>
+        </view>
+        <view>
+          <text class='con1-mt'>12</text>
+          <text>待评价</text>
+        </view>
+        <view>
+          <text class='con1-mt'>VIP1</text>
+          <text>售后</text>
+        </view>
+        <view class='coin'>
+         <navigator url="/pages/wallet/wallet" class='column'>
+          <image src='../../images/classify/m6.png'></image>
+          <text>我的钱包</text>
+         </navigator>
+        </view>
+     </view>
+   </view>
+   <view class='main-con main-con2'>
+      <navigator url="/pages/aboutus/myaccount">
+        <view>
+           <image src='../../images/classify/y1.png'></image>
+           <text>我的账号</text>
+        </view>
+      </navigator>
+      <navigator url="/pages/trolley/mypackage">
+        <view>
+           <image src='../../images/classify/y2.png'></image>
+           <text>我的券包</text>
+        </view>
+      </navigator>
+      <navigator url="/pages/trolley/coupon">
+        <view>
+           <image src='../../images/classify/y3.png'></image>
+           <text>领券中心</text>
+        </view>
+      </navigator>
+      <navigator url="/pages/collect/collect">
+        <view>
+           <image src='../../images/classify/y4.png'></image>
+           <text>我的收藏</text>
+        </view>
+      </navigator>
+   </view>
+   <view class='main-con main-con3'>
+      <navigator url="/pages/address/address">
+        <view>
+           <image src='../../images/classify/y5.png'></image>
+           <text>我的地址</text>
+        </view>
+      </navigator>
+      <navigator url="/pages/aboutus/changepassword">
+        <view>
+           <image src='../../images/classify/y6.png'></image>
+           <text>修改密码</text>
+        </view>
+      </navigator>
+      <navigator url="">
+        <view>
+           <image src='../../images/classify/y7.png'></image>
+           <text>在线客服</text>
+        </view>
+      </navigator>
+      <navigator url="">
+        <view>
+           <image src='../../images/classify/y8.png'></image>
+           <text>联系我们</text>
+        </view>
+      </navigator>
+      <navigator url="/pages/aboutus/myintegral">
+        <view>
+           <image src='../../images/classify/y9.png'></image>
+           <text>关于我们</text>
+        </view>
+      </navigator>
+   </view>
+   <view class='main-con main-con4'>
+      <navigator url="/pages/login/login">
+        <view>
+           <image src='../../images/classify/y5.png'></image>
+           <text>退出登录</text>
+        </view>
+      </navigator>
+    </view>
+</view>

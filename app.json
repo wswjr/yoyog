@@ -1,0 +1,73 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/goodscategory/goodscategory",
+    "pages/shop/shop",
+    "pages/trolley/trolley",
+    "pages/demo/demo",
+    "pages/orders/orders",
+    "pages/aboutus/aboutus",
+    "pages/aboutus/changepassword",
+    "pages/aboutus/myaccount",
+    "pages/aboutus/myintegral",
+    "pages/trolley/coupon",
+    "pages/collect/collect",
+    "pages/login/login",
+    "pages/login/register",
+    "pages/category/category",
+    "pages/category/childcate",
+    "pages/product/product",
+    "pages/indent/indent",
+    "pages/indent/logistic",
+    "pages/indent/comment",
+    "pages/promotional/promotional",
+    "pages/wallet/wallet",
+    "pages/address/address",
+    "pages/address/addressedit",
+    "pages/trolley/mypackage",
+    "pages/shop/details"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#0aa570",
+    "navigationBarTitleText": "优友购",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#0aa570",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index1.png",
+        "selectedIconPath": "images/icon/index2.png"
+      },
+      {
+        "pagePath": "pages/goodscategory/goodscategory",
+        "text": "商品分类",
+        "iconPath": "images/icon/goodscategory1.png",
+        "selectedIconPath": "images/icon/goodscategory2.png"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "积分商城",
+        "iconPath": "images/icon/shop1.png",
+        "selectedIconPath": "images/icon/shop2.png"
+      },
+      {
+        "pagePath": "pages/trolley/trolley",
+        "text": "购物车",
+        "iconPath": "images/icon/trolley1.png",
+        "selectedIconPath": "images/icon/trolley2.png"
+      },
+      {
+        "pagePath": "pages/aboutus/aboutus",
+        "text": "我的",
+        "iconPath": "images/icon/aboutus1.png",
+        "selectedIconPath": "images/icon/aboutus2.png"
+      }
+    ]
+  }
+}
+    

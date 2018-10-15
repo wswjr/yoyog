@@ -1,0 +1,72 @@
+/* pages/trolley/mypackage.wxss */
+.shop-fl{background-color: #fff;color: #adadad;}
+
+.shop-fl .xz{
+  color:#111;
+  border-bottom:5rpx solid #0aa570;
+}
+.cart-box{margin: 20rpx;}
+
+.cart-bo{
+  width: 90%;
+  height: 260rpx;
+}
+.package-image{
+  width: 100%;
+  height: 100%;
+}
+.package-image1{
+  width:100rpx;
+  height:100rpx;
+  position:relative;
+  bottom:254px;
+  left:201px;
+}
+.cart-box .package-box{
+  position:relative;
+  bottom:151px;
+  width:90%;
+  height:100%;
+  left: 30rpx;
+}
+.package-text1{
+  color: #fff;
+  font-size: 23rpx;
+}
+.package-header{
+   display: flex;
+   justify-content:flex-end;
+   height: 125rpx;
+   align-items: center;
+}
+.package-text2{
+  font-size: 70rpx;
+  color: #fff;
+  margin-right: 41rpx;
+}
+.package-text3{
+  font-size:35rpx;
+  color:#ce64ce;
+   margin:0 0 16rpx 60rpx;
+   font-weight: 600;
+}
+.package-text4{
+  font-size:27rpx;
+  color:#ce64ce;
+  font-weight: 600;
+}
+.package-header-child{
+  display: flex;
+  flex-direction: column;
+}
+.package-footer{
+  display: flex;
+  justify-content: space-between;
+  line-height: 125rpx;
+}
+.package-footer text{
+  font-size: 28rpx;
+  color: #666666;
+}
+.font-color1{color: #56af00;}
+.font-color2{color: #b4b4b4;}

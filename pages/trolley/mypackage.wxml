@@ -1,0 +1,65 @@
+<view class="main">
+  <view class="orders-no-address">我的券包</view>
+  <view class='shop-fl'>
+    <view catchtap="inden" data-index="0" class="{{id0?'xz ':''}}">全部卡券</view>
+    <view catchtap="inden" data-index="1" class="{{id1?'xz ':''}}">即将失效</view>
+    <view catchtap="inden" data-index="2" class="{{id2?'xz ':''}}">已过期</view>
+  </view>
+  
+  <view class="cart-box" wx:for="{{orders}}" wx:key="{{index}}" wx:for-item="item">
+   <view class='cart-bo' wx:if="{{item.type == 1}}">
+       <image class='package-image' src='../../images/hd/y1.png'></image>
+       <view class='package-box'>
+          <text class='package-text1'>GREEN ORANGE</text>
+          <view class='package-header'>
+            <text class='package-text2'>￥{{item.price}}</text>
+            <view class='package-header-child'>
+               <text class='package-text3'>优惠券</text>
+               <text class='package-text4'>仅限满减使用</text>
+               <text class='package-text4'>满{{item.mprice}}可用</text>
+            </view>
+          </view>
+          <view class='package-footer'>
+             <text>使用期限：{{item.creattime}} ~ {{item.endtime}}</text>
+             <text>未使用</text>
+          </view>
+       </view>
+   </view>
+   <view class='cart-bo' wx:if="{{item.type == 2}}">
+       <image class='package-image' src='../../images/hd/y2.png'></image>
+       <view class='package-box'>
+          <text class='package-text1'>GREEN ORANGE</text>
+          <view class='package-header'>
+            <text class='package-text2'>￥{{item.price}}</text>
+            <view class='package-header-child'>
+               <text class='package-text3 font-color1'>优惠券</text>
+               <text class='package-text4 font-color1'>仅限满减使用</text>
+               <text class='package-text4 font-color1'>满{{item.mprice}}可用</text>
+            </view>
+          </view>
+          <view class='package-footer'>
+             <text>使用期限：{{item.creattime}} ~ {{item.endtime}}</text>
+             <text>未使用</text>
+          </view>
+       </view>
+   </view>
+   <view class='cart-bo' wx:if="{{item.type == 3}}">
+       <image class='package-image' src='../../images/hd/y3.png'></image>
+       <view class='package-box'>
+          <text class='package-text1'>GREEN ORANGE</text>
+          <view class='package-header'>
+            <text class='package-text2'>￥{{item.price}}</text>
+            <view class='package-header-child'>
+               <text class='package-text3 font-color2'>会员卡</text>
+               <text class='package-text4 font-color2'>仅限会员使用</text>
+            </view>
+          </view>
+          <view class='package-footer'>
+             <text>使用期限：{{item.creattime}} ~ {{item.endtime}}</text>
+             <text>已过期</text>
+          </view>
+       </view>
+       <image class='package-image1' src='../../images/hd/y4.png'></image>
+   </view>
+  </view>
+</view>

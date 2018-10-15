@@ -1,0 +1,58 @@
+<view class="main">
+    <!-- <navigator url="../aboutus/aboutus"> -->
+        <view  class="orders-address">
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="https://wx.qlogo.cn/mmopen/vi_32/KU3mW0MNM06lQfMPicBPwbcvAJtZPbokHFzKJtHKZTf3cpbOhxjCFWibFtc6CSDmbvV5T2gbSOAZwEs5JWdARDHA/132" mode="cover"></image>
+          <text class="userinfo-nickname">自有无用</text>
+           
+        </view>
+    <!-- </navigator> -->
+
+    <view class="form-box">
+        <view class='form-box-title'>
+           <image src="../../images/hd/hg.png"></image>
+           <view class='form-title-vs'>
+              总积分:<text class='box-text1'>60</text>
+           </view>
+           
+        </view>
+            <view class='view-jf'>
+              <image src='../../images/hd/jf.png'></image>
+              积分详情
+            </view>
+            <view class='view-pass'>
+              <text class="pass-text1">2017-07-12</text>   
+              <text>购物消费100元</text>
+              <text class="pass-text2">+10</text>
+            </view>         
+            <view class='view-pass'>
+              <text class="pass-text1">2017-07-12</text>   
+              <text>购物消费100元</text>
+              <text class="pass-text2">+10</text>
+            </view>  
+            <view class='view-pass'>
+              <text class="pass-text1">2017-07-12</text>   
+              <text>购物消费100元</text>
+              <text class="pass-text2">+10</text>
+            </view>  
+            <view class='view-pass'>
+              <text class="pass-text1">2017-07-12</text>   
+              <text>购物消费100元</text>
+              <text class="pass-text2">+10</text>
+            </view>  
+            <view class='view-pass'>
+              <text class="pass-text1">2017-07-12</text>   
+              <text>购物消费100元</text>
+              <text class="pass-text2">+10</text>
+            </view>  
+            <view class='view-pass'>
+              <text class="pass-text1">2017-07-12</text>   
+              <text>购物消费100元</text>
+              <text class="pass-text2">+10</text>
+            </view>  
+            <view class='view-pass'>
+              <text class="pass-text1">2017-07-12</text>   
+              <text>购物消费100元</text>
+              <text class="pass-text2">+10</text>
+            </view>  
+    </view>
+</view>

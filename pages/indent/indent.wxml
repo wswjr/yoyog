@@ -1,0 +1,119 @@
+<view class="main">
+  <view class="orders-no-address">我的订单</view>
+  <view class='shop-fl'>
+    <view catchtap="inden" data-index="0" style="{{id0?'color:#f15716 ':'color:#adadad'}}">全部订单</view>
+    <view catchtap="inden" data-index="1" style="{{id1?'color:#f15716 ':'color:#adadad'}}">待付款</view>
+    <view catchtap="inden" data-index="2" style="{{id2?'color:#f15716 ':'color:#adadad'}}">待发货</view>
+    <view catchtap="inden" data-index="3" style="{{id3?'color:#f15716 ':'color:#adadad'}}">待收货</view>
+    <view catchtap="inden" data-index="4" style="{{id4?'color:#f15716 ':'color:#adadad'}}">待评价</view>
+  </view>
+  
+  <view class="cart-box" wx:for="{{orders}}" wx:key="{{index}}" wx:for-item="item">
+   <view wx:if="{{item.type == 1}}">
+    <view class='cart-header'>
+      <text>单号：{{item.dh}}</text>
+      <text class='font-sm font-gray'>等待买家付款</text>
+    </view>
+    <view class="cart-list"> 
+      <view class='content'>
+        <navigator url="../details/details?id={{item.id}}">
+          <image class="cart-thumb" src="{{item.image}}"></image>
+        </navigator>
+        <view class='cart-count-box1'>
+          <text class="cart-pro-name">{{item.title}}</text>
+          <text class="cart-pro-xq">{{item.xq}}</text>
+          <text class="cart-pro-price">￥{{item.price}}</text>
+          <text class="cart-pro-xq">含运费 {{item.yfprice}}</text>
+        </view>
+      </view>
+      <text class="cart-del">×{{item.num}}</text>
+    </view>
+    <view class='cart-footer'>
+       <navigator url="/pages/indent/logistic" class='column'>
+         <text class='font-box'>联系卖家</text>
+       </navigator>
+       <text class='font-box'>修改地址</text>
+       <text class='font-box'>取消订单</text>
+       <text class='font-box'>付款</text>
+    </view>
+   </view>
+   <view wx:if="{{item.type == 2}}">
+    <view class='cart-header'>
+      <text>单号：{{item.dh}}</text>
+      <text class='font-sm font-gray'>等待买家付款</text>
+    </view>
+    <view class="cart-list"> 
+      <view class='content'>
+        <navigator url="../details/details?id={{item.id}}">
+          <image class="cart-thumb" src="{{item.image}}"></image>
+        </navigator>
+        <view class='cart-count-box1'>
+          <text class="cart-pro-name">{{item.title}}</text>
+          <text class="cart-pro-xq">{{item.xq}}</text>
+          <text class="cart-pro-price">￥{{item.price}}</text>
+          <text class="cart-pro-xq">含运费 {{item.yfprice}}</text>
+        </view>
+      </view>
+      <text class="cart-del">×{{item.num}}</text>
+    </view>
+    <view class='cart-footer'>
+       <navigator url="/pages/indent/logistic" class='column'>
+         <text class='font-box'>提醒卖家发货</text>
+       </navigator>
+    </view>
+   </view>
+   <view wx:if="{{item.type == 3}}">
+    <view class='cart-header'>
+      <text>单号：{{item.dh}}</text>
+      <text class='font-sm font-gray'>{{item.time}}</text>
+    </view>
+    <view class="cart-list"> 
+      <view class='content'>
+        <navigator url="../details/details?id={{item.id}}">
+          <image class="cart-thumb" src="{{item.image}}"></image>
+        </navigator>
+        <view class='cart-count-box1'>
+          <text class="cart-pro-name">{{item.title}}</text>
+          <text class="cart-pro-xq">{{item.xq}}</text>
+          <text class="cart-pro-price">￥{{item.price}}</text>
+          <text class="cart-pro-xq">含运费 {{item.yfprice}}</text>
+        </view>
+      </view>
+      <text class="cart-del">×{{item.num}}</text>
+    </view>
+    <view class='cart-footer'>
+       <navigator url="/pages/indent/logistic" class='column'>
+         <text class='font-box'>查看物流</text>
+       </navigator>
+       <text class='font-box'>确定收货</text>
+    </view>
+   </view>
+   <view wx:if="{{item.type == 4}}">
+    <view class='cart-header'>
+      <text>单号：{{item.dh}}</text>
+      <text class='font-sm font-gray'>等待买家付款</text>
+    </view>
+    <view class="cart-list"> 
+      <view class='content'>
+        <navigator url="../details/details?id={{item.id}}">
+          <image class="cart-thumb" src="{{item.image}}"></image>
+        </navigator>
+        <view class='cart-count-box1'>
+          <text class="cart-pro-name">{{item.title}}</text>
+          <text class="cart-pro-xq">{{item.xq}}</text>
+          <text class="cart-pro-price">￥{{item.price}}</text>
+          <text class="cart-pro-xq">含运费 {{item.yfprice}}</text>
+        </view>
+      </view>
+      <text class="cart-del">×{{item.num}}</text>
+    </view>
+    <view class='cart-footer'>
+       <navigator url="/pages/indent/logistic" class='column'>
+         <text class='font-box'>删除订单</text>
+       </navigator>
+       <text class='font-box'>查看物流</text>
+       <text class='font-box'>评论</text>
+    </view>
+   </view>
+  </view>
+</view>

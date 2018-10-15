@@ -1,0 +1,24 @@
+<!--pages/login/register.wxml-->
+<view class='main'>
+    <form bindsubmit="formSubmit">
+        <view class='view-pass'>
+          <input  type="number" name="phone" value="{{address.phone}}" placeholder="请输入手机号"/>
+        </view> 
+        <view class='view-pass' style='margin-bottom:20rpx;'>
+          <input class='register-input'  type="password" value="{{address.phone}}" placeholder="输入验证码"/>
+          <text class='register-text1' disabled='{{disabled}}' data-id="2" bindtap="getVerificationCode">{{time}}</text>
+        </view> 
+        <view class='view-pass'>
+          <input  type="password" name="phone" value="{{address.phone}}" placeholder="请输入密码"/>
+        </view> 
+        <view class='view-pass'>
+          <input  type="password" name="phone" value="{{address.phone}}" placeholder="再次确认密码"/>
+        </view> 
+       
+           <checkbox class='pass-checkbox' value="{{index}}">我已阅读并同意《好人人用户协议》</checkbox>
+        
+        <view class='view-bu'>
+           <button class='pass-input' form-type="submit">登录</button>
+        </view>
+      </form>
+</view>

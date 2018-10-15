@@ -1,0 +1,186 @@
+/* pages/indent/logistic.wxss */
+page{
+   height: 100%;
+   background-color: #ededed;
+   }
+/* 箭头 */
+.orders-no-address {
+  position: relative;
+  height: 90rpx;
+  line-height: 90rpx;
+  color: #090909;
+  border-bottom: 2rpx solid #ededed;
+  text-align: center;
+  background-color: #fff;
+}
+
+.orders-no-address::after {
+  position: absolute;
+  left: 30rpx;
+  top: 34rpx;
+  content: '';
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 4rpx solid #7f7f7f;
+  border-left: 4rpx solid #7f7f7f;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(320deg);
+}
+.logistic{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+}
+/* 物流头部 */
+.logistic-header{
+  width:95%;
+  height:80px;
+  border-radius:13px;
+  background-color:#fff;
+  position:relative;
+  top:30rpx;
+  box-shadow:0px 1px 20px #c2c0c0;
+  display:flex;
+  align-items: center;
+  z-index: 1;
+}
+.logistic-h1{
+  margin-left:50rpx;
+  width: 100rpx;
+  height: 100rpx;
+}
+.logistic-h2{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.logistic-h2 text{
+  display: flex;
+  font-size: 28rpx;
+}
+.logistic-h3{
+  position: absolute;
+  right: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+#map{
+  z-index: 0;
+  bottom: 35rpx;
+}
+.logistic-title{
+  height:130px;
+  position: absolute;
+  top:600rpx;
+  align-items: center;
+  font-size: 32rpx;
+}
+.logistic-title image{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 30rpx;
+}
+.logistic-t1{
+  display: flex;
+  flex-direction: column;
+}
+.logistic-t1 text{
+  font-size: 28rpx;
+}
+/* 物流时间轴 */
+/*时间轴*/
+/*外部容器*/
+.listview-container {
+  margin: 10rpx 10rpx;
+  width:95%;
+  height:100%;
+  background-color:#fff;
+  display:flex;
+  flex-direction:column;
+  z-index: 1;
+  position: relative;
+  top: 150rpx;
+  border-radius: 13px;
+}
+/*行样式*/
+.playlog-item {
+  display: flex;
+}
+/*时间轴*/
+.playlog-item .dotline {
+  width: 35px;
+  position: relative;
+  top: 13rpx;
+}
+/*竖线*/
+.playlog-item .dotline .line {
+  width: 1px;
+  height: 100%;
+  background: #ccc;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+/*圆点*/
+.playlog-item:first-child .content .course{
+   font-size: 32rpx;
+   line-height: 90rpx;
+   color: #444;
+}
+.playlog-item:first-child .dotline .dot{
+  background: #30ac63;
+  width: 13px;
+  height: 13px;
+}
+.playlog-item:first-child .dotline .line{
+  height: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.playlog-item:last-child .dotline .line{
+  height: 50%;
+  position: absolute;
+  top: 0;
+}
+.playlog-item .dotline .dot {
+  width: 11px;
+  height: 11px;
+  border: 1rpx #ddd solid;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+/*时间戳*/
+.playlog-item .dotline .time {
+  width: 100%;
+  position: absolute;
+  margin-top: 30px;
+  z-index: 99;
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+/*右侧主体内容*/
+.playlog-item .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 3px 0;
+}
+/*章节部分*/
+.playlog-item .content .chapter {
+  font-size: 30rpx;
+  line-height: 68rpx;
+  color: #444;
+  white-space: normal;
+  padding-right: 10px;
+}
+/*课程部分*/
+.playlog-item .content .course {
+  font-size: 28rpx;
+  line-height: 72rpx;
+  color: #999;
+}

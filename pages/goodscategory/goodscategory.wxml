@@ -1,0 +1,32 @@
+<!--pages/goodscategory/goodscategory.wxml-->
+<view class='main'>
+  <view class='orders-address'>
+            <view class='page_row' bindtap="suo">
+                <view class="search">
+                  <view class="df search_arr">
+                    <icon class="searchcion" size='20' type='search'></icon>
+                    <input type='text'  placeholder="请输入商品名称" value="{{searchValue}}"/>
+                  </view>
+                </view>
+                <view class='sousuo'>筛选</view>
+              </view>
+  </view>
+  <view class='shop-fl'>
+      <view>综合</view>
+      <view>最新</view>
+      <view data-index="{{daindex1}}" bindtap="choosesort1">价格<image src="{{imageurl1}}"></image></view>
+      <view>销量</view>
+  </view>
+  <view class='goods'>
+    <view class='goods-con' wx:for="{{scategory}}" wx:key="index" wx:for-item="item">
+      <navigator url="/pages/product/product?id={{item.id}}" class="order-button">
+        <image class='goods-img1' src="{{item.scategory_img}}"></image>
+        <view class='goods-footer'>
+          <text class='goods-text1'>{{item.scategory_name}}</text>
+          <text class='goods-text2'>￥{{item.scategory_price}}/{{item.scategory_gg}}</text>
+        </view>
+        </navigator>
+    </view>
+  </view>
+</view>
+

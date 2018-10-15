@@ -1,0 +1,20 @@
+<view class='main'>
+   <image class='loginbg' src='http://gongrongshe.jarmr.cn/public/static/upload/jk/loginbg.png'></image>
+   <view class='main-login'>
+       <image class='logo' src='http://gongrongshe.jarmr.cn/public/static/upload/jk/logo.png'></image>
+      <form  bindsubmit="formSubmit">
+       <view class='view-pass'>
+          <image class="pass-text1" src='/images/classify/phone.png'></image>
+          <input  type="number" name="phone" value="{{address.phone}}" placeholder="请输入手机号"/>
+        </view>         
+        <view class='view-pass'>
+          <image class="pass-text1" src='/images/classify/password.png'></image>
+          <input  type="password" name="password" value="{{address.phone}}" placeholder="请输入密码"/>
+        </view> 
+        <button class='pass-input'  form-type="submit">登录</button>
+      </form>
+        <navigator url="/pages/login/register" style='margin-bottom:40rpx;'>
+          <text class="pass-text2">还没有账号注册></text>
+        </navigator>
+   </view>
+</view>
