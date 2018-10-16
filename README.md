@@ -12,7 +12,6 @@ github地址：https://github.com/wswjr/yoyog
 ![总分类 图片](http://gongrongshe.jarmr.cn/public/static/upload/jk/yoyog/20181015_201906.gif)
 ![评论 图片](http://gongrongshe.jarmr.cn/public/static/upload/jk/yoyog/20181015_201607.gif)
 ![收货地址 图片](http://gongrongshe.jarmr.cn/public/static/upload/jk/yoyog/20181015_201719.gif)
-![积分商城 图片](http://gongrongshe.jarmr.cn/public/static/upload/jk/yoyog/20181015_201037.gif)
 ![个人信息 图片](http://gongrongshe.jarmr.cn/public/static/upload/jk/yoyog/20181015_201314.gif)
 
 
